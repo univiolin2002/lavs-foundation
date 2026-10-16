@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thank you — LAVS Foundation</title>
+<meta name="description" content="Thank you for supporting LAVS Foundation.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500&family=Archivo:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="masthead">
+  <div class="wrap masthead__inner">
+    <a class="wordmark" href="index.html">LAVS</a>
+
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="about.html">About</a>
+      <a href="index.html#programs">Programs</a>
+      <a href="index.html#upcoming">Concerts</a>
+      <a href="index.html#programs">Exchange</a>
+      <a href="support.html">Support</a>
+    </nav>
+
+    <div class="masthead__actions">
+      <a class="btn btn--ghost-desktop" href="#contact">Contact</a>
+      <button class="navtoggle" id="navtoggle" aria-expanded="false" aria-controls="nav">
+        <span class="navtoggle__bars" aria-hidden="true"></span>Menu
+      </button>
+    </div>
+  </div>
+  <div class="wrap" id="navmobile"></div>
+</header>
+
+<main id="main">
+  <div class="wrap">
+
+    <div class="pagehead">
+      <h1>Thank you</h1>
+      <p>Your gift has been received. A receipt is on its way to your email from PayPal; we will write to you separately with an acknowledgement for your tax records.</p>
+    </div>
+
+    <p class="motto">Lift &nbsp;&middot;&nbsp; Amplify &nbsp;&middot;&nbsp; Voice &nbsp;&middot;&nbsp; Sustain</p>
+
+    <section class="split" style="margin-top:40px">
+      <h2>What happens<br>with it</h2>
+      <div class="split__body">
+        <p class="lead">It pays for concerts that cost nothing to attend, and for the young musicians who play them.</p>
+        <p class="note">LAVS Foundation is a California nonprofit public benefit corporation and a 501(c)(3) public charity, EIN 85-0813360. Contributions are tax-deductible to the extent permitted by law. No goods or services were provided in exchange for your gift unless we have told you otherwise in writing.</p>
+      </div>
+    </section>
+
+    <section class="split">
+      <h2>Come<br>and listen</h2>
+      <div class="split__body">
+        <p class="measure">The next concert in Los Angeles is the Colburn School&rsquo;s Chamber Program on Monday 7 December 2026 at 7pm, presented by Colburn at LA Fine Violins, 225 S. Olive Street. Admission is free.</p>
+        <div class="lede__cta" style="margin-top:26px">
+          <a class="btn btn--solid btn--lg" href="index.html#upcoming">What&rsquo;s coming up</a>
+          <a class="btn btn--lg" href="about.html">About the Foundation</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="split">
+      <h2>If something<br>looks wrong</h2>
+      <div class="split__body">
+        <p class="measure">If your gift did not go through as you intended, or you would like it directed to a particular programme, write to <a href="mailto:info@lavsfoundation.org">info@lavsfoundation.org</a> and we will put it right.</p>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer class="foot" id="contact">
+  <div class="wrap foot__inner">
+    <div>
+      <div class="foot__mark">LAVS</div>
+      <p class="foot__motto">Lift &middot; Amplify &middot; Voice &middot; Sustain</p>
+    </div>
+    <address class="foot__contact" style="font-style:normal">
+      3350 W Olympic Boulevard, Suite 202<br>
+      Los Angeles, California 90019<br>
+      213&thinsp;471&thinsp;2124<br>
+      <a href="mailto:info@lavsfoundation.org">info@lavsfoundation.org</a>
+    </address>
+    <p class="foot__legal">
+      LAVS Foundation is a California nonprofit public benefit corporation and a 501(c)(3) tax-exempt organisation.<br>
+      EIN 85-0813360<br>
+      CA Entity C4587450 &middot; CT0297389
+    </p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var btn = document.getElementById('navtoggle');
+  var nav = document.getElementById('nav');
+  var slot = document.getElementById('navmobile');
+  if (!btn || !nav || !slot) return;
+  btn.addEventListener('click', function () {
+    var open = btn.getAttribute('aria-expanded') === 'true';
+    btn.setAttribute('aria-expanded', String(!open));
+    if (open) {
+      nav.classList.remove('nav--open');
+      nav.style.display = '';
+    } else {
+      slot.appendChild(nav);
+      nav.classList.add('nav--open');
+      nav.style.display = 'flex';
+    }
+  });
+})();
+</script>
+
+</body>
+</html>
