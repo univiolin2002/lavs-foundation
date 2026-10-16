@@ -280,8 +280,9 @@ h2 {
 .person:last-child { border-bottom: 1px solid var(--rule); }
 .person__photo {
   width: 118px; height: 148px; flex-shrink: 0; background: var(--plate);
-  display: flex; align-items: center; justify-content: center;
+  display: flex; align-items: center; justify-content: center; overflow: hidden;
 }
+.person__photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .person__photo span {
   font-size: 9px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted);
 }
